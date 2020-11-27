@@ -1,0 +1,10 @@
+# IDE
+.idea/
+.atom/
+.vscode/
+
+# Rspec
+coverage/
+
+# Gem builds
+ruby_extended-*.gem

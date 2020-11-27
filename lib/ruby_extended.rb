@@ -1,0 +1,5 @@
+require 'ruby_extended/array'
+require 'ruby_extended/hash'
+require 'ruby_extended/number'
+require 'ruby_extended/object'
+require 'ruby_extended/string'
