@@ -17,7 +17,7 @@ module NumericRubyExtended
         options[:decimal] ? result : result.to_i
       end
 
-      def get_percent_from(value, options = {})
+      def percent_in(value, options = {})
         result = (self.to_f / value.to_f * 100)
         options[:decimal] ? result : result.to_i
       end

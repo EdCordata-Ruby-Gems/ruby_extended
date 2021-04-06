@@ -28,12 +28,12 @@ Possible to get decimal value as well
 ```
 
 
-### `.get_percent_from`
-Get percent from two numbers
+### `.percent_in`
+Get how much, in percent, the first number fits inside second numbers
 ```ruby
-(2).get_percent_from(6) # => 33
+(2).percent_in(6) # => 33
 ```
 Possible to get decimal value as well
 ```ruby
-(2).get_percent_from(6, decimal: true) # => 33.33333333333333
+(2).percent_in(6, decimal: true) # => 33.33333333333333
 ```

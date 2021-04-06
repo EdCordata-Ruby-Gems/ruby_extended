@@ -86,26 +86,26 @@ RSpec.describe Numeric do
   end
 
 
-  describe 'Numeric.get_percent_from' do
+  describe 'Numeric.percent_in' do
 
     it 'Should return percent from two numbers, using BigDecimal class' do
-      expect(BigDecimal('1.0').get_percent_from(BigDecimal('2'))).to eql(50)
+      expect(BigDecimal('1.0').percent_in(BigDecimal('2'))).to eql(50)
     end
 
     it 'Should return percent from two numbers, using Float class' do
-      expect(Float('1.0').get_percent_from(Float('2'))).to eql(50)
+      expect(Float('1.0').percent_in(Float('2'))).to eql(50)
     end
 
     it 'Should return percent from two numbers, using Integer class' do
-      expect(Integer('1').get_percent_from(Integer('2'))).to eql(50)
+      expect(Integer('1').percent_in(Integer('2'))).to eql(50)
     end
 
     it 'Should return percent from two numbers, using Complex class' do
-      expect(Complex('1.0').get_percent_from(Complex('2'))).to eql(50)
+      expect(Complex('1.0').percent_in(Complex('2'))).to eql(50)
     end
 
     it 'Should return percent from two numbers, using Rational class' do
-      expect(Rational('1.0').get_percent_from(Rational('2'))).to eql(50)
+      expect(Rational('1.0').percent_in(Rational('2'))).to eql(50)
     end
 
   end
