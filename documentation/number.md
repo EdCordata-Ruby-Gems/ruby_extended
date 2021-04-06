@@ -1,6 +1,8 @@
 # Ruby Extend - Number (Integer, Float, BigDecimal, Complex, Rational)
 
 
+<br/>
+
 
 ### `.no_zeros`
 Converts any number to string, that has no zeroes
@@ -10,11 +12,17 @@ Converts any number to string, that has no zeroes
 ```
 
 
+<br/>
+
+
 ### `.to_money`
 Converts any number to string formatted in money format
 ```ruby
 (1.0).to_money  # => '1.00'
 ```
+
+
+<br/>
 
 
 ### `.percent_of`
@@ -26,6 +34,9 @@ Possible to get decimal value as well
 ```ruby
 (10).percent_of(111, decimal: true) # => 11.100000000000001
 ```
+
+
+<br/>
 
 
 ### `.percent_in`

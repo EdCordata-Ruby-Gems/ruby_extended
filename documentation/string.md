@@ -1,6 +1,8 @@
 # Ruby Extend - String
 
 
+<br/>
+
 
 ### `.similarity_percent`
 Returns percentage on how similar are two strings
@@ -15,6 +17,9 @@ a.similarity_percent(b) # => 93.02325581395348
 ```
 
 
+<br/>
+
+
 ### `.index_of`
 Return array of indexes found in string
 ```ruby
@@ -22,11 +27,17 @@ Return array of indexes found in string
 ```
 
 
+<br/>
+
+
 ### `.strip_newline`
 Remove new line characters
 ```ruby
 "\n\r".strip_newline # => ''
 ```
+
+
+<br/>
 
 
 ### `.strip_whitespace`
@@ -38,9 +49,9 @@ Whitespace characters that are removed:
 <table border="1">
   <thead>
     <tr>
-      <td>Name</td>
-      <td>Code</td>
-    </td>
+      <th>Name</th>
+      <th>Code</th>
+    </tr>
   </thead>
   <tbody>
     <tr>

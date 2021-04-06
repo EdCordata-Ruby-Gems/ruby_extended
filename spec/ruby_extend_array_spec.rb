@@ -206,7 +206,7 @@ RSpec.describe Array do
     end
 
     it 'Should return nil if hash key was not found' do
-      expect( [ {a: 1}, {a: 'a'}, {a: 3} ].sum(key: :b) ).to be_nil
+      expect( [ {a: 1}, {a: 'a'}, {a: 3} ].sum(key: :b) ).to(be_nil)
     end
 
   end

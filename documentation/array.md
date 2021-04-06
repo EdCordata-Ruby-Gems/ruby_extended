@@ -1,6 +1,8 @@
 # Ruby Extend - Array
 
 
+<br/>
+
 
 ### `.clean`
 Cleans Array from empty values
@@ -15,6 +17,8 @@ Note that strip, used in this method, is regular ruby `.strip` not
 [.strip_whitespace](https://github.com/EdCordata-Ruby-Gems/ruby_extended/blob/master/documentation/string.md#strip_whitespace)
 available in this gem.
 
+
+<br/>
 
 
 ### `.sort_lv`
@@ -32,6 +36,9 @@ Method accepts block, so it can be used on hash arrays.
   { n: 'z' }
 ].sort_lv { |x| x[:n] } # => [ { n: 'a' }, { n: 'ā' }, { n: 'c' }, { n: 'č' }, { n: 'z' } ]
 ```
+
+
+<br/>
 
 
 ### `.tabulate`
@@ -74,6 +81,9 @@ Split and transpose array horizontally or vertically.
 ```
 
 
+<br/>
+
+
 ### `.sample_index`
 Returns uniq array of hashes, based on one key.
 ```ruby
@@ -93,6 +103,9 @@ Returns original array if key not found
 ```
 
 
+<br/>
+
+
 ### `.duplicates`
 Returns duplicates from array
 ```ruby
@@ -107,6 +120,9 @@ Returns duplicates from array with count
 #       {item: nil, count: 2}
 #    ]
 ```
+
+
+<br/>
 
 
 ### `.sum` (overwrites & extends existing method)
@@ -129,6 +145,9 @@ If the key is not found in any of the array hash items, will return `nil`
 ```ruby
 [ {a: 1}, {a: 'a'}, {a: 3} ].sum(key: :b) # => nil
 ```
+
+
+<br/>
 
 
 ### `.to_tree`
