@@ -2,6 +2,21 @@
 
 
 
+### `.clean`
+Cleans Array from empty values
+```ruby
+['', nil, 'value'].clean # => ['value']
+```
+Allows to strip string values, before checking if it's empty, with parameter `strip`.
+```ruby
+['', nil, 'value', ' ', ' a '].clean(strip: true) # => ['value', ' a ']
+```
+Note that strip, used in this method, is regular ruby `.strip` not
+[.strip_whitespace](https://github.com/EdCordata-Ruby-Gems/ruby_extended/blob/master/documentation/string.md#strip_whitespace)
+available in this gem.
+
+
+
 ### `.sort_lv`
 Sorts Array respecting latvian characters, like `Ā`, `Č`, etc..
 ```ruby

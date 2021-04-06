@@ -2,6 +2,16 @@ class Array
   require 'unicode_utils'
 
 
+  def clean(strip: false)
+    self.map do |item|
+      next if item == ''
+      next if item.nil?
+      next if item.kind_of?(String) && strip && item.strip == ''
+      item
+    end.compact
+  end
+
+
   def sort_lv(&block)
     lang = [
       %w[e ē], %w[u ū], %w[i ī], %w[a ā], %w[s š], %w[g ģ], %w[k ķ], %w[l ļ],

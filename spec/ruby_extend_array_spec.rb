@@ -6,6 +6,28 @@ require_relative '../lib/ruby_extended.rb'
 RSpec.describe Array do
 
 
+  describe 'Array.clean' do
+
+    it "Should clean nil's and empty strings" do
+      input_arr = ['', nil, 'value', ' ', ' a ']
+
+      expect(input_arr.clean.length).to eq(3)
+      expect(input_arr.clean.include?('value')).to(be_truthy)
+      expect(input_arr.clean.include?(' a ')).to(be_truthy)
+      expect(input_arr.clean.include?(' ')).to(be_truthy)
+    end
+
+    it 'Should check if string values are empty after strip, if strip is true' do
+      input_arr = ['', nil, 'value', ' ', ' a ']
+
+      expect(input_arr.clean(strip: true).length).to eq(2)
+      expect(input_arr.clean(strip: true).include?('value')).to(be_truthy)
+      expect(input_arr.clean(strip: true).include?(' a ')).to(be_truthy)
+    end
+
+  end
+
+
   describe 'Array.sort_lv' do
 
     it 'Should order Latvian special characters in array' do
